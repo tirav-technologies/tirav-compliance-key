@@ -1,0 +1,3 @@
+# Ignore local digest artifacts
+digest.txt
+digest.txt.asc
