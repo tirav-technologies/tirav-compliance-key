@@ -1,0 +1,29 @@
+cd /home/tirav/carbon_reports
+
+cat > .gitignore << 'EOF'
+# Do not commit local environment
+.env
+
+# Logs and runtime artifacts
+logs/
+carbon_report_*.log
+
+# Generated reports / artifacts
+reports/genesis.json
+reports/genesis.json.sig
+reports/weekly_summary.json
+
+# Local scratch / test artefacts
+THCP_Package/
+EDGER_FILE
+passwd
+replacements.txt
+test*
+*.sig
+*.asc
+*.gpg
+
+# Git filter-repo helper
+replacements.txt
+EOF
+
